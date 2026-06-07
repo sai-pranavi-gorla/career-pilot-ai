@@ -1,0 +1,647 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#312e81);
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(0,0,0,0.2);
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#c084fc;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+
+.hero-content h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Buttons */
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+
+    border:none;
+    border-radius:30px;
+
+    cursor:pointer;
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 20px #a855f7,
+    0 0 40px #a855f7;
+}
+
+/* Shared Cards */
+
+.card{
+    width:300px;
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+
+    text-align:center;
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Features */
+
+.features{
+    min-height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+    flex-wrap:wrap;
+
+    padding:50px;
+}
+
+/* Assessment */
+
+.assessment{
+    min-height:80vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+.assessment h2{
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+.form-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+    width:400px;
+    max-width:90%;
+}
+
+select,
+input{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    width:100%;
+}
+
+#result{
+    margin-top:30px;
+
+    width:550px;
+    max-width:90%;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+}
+
+/* Career Opportunities */
+
+.careers{
+    min-height:70vh;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.careers h2{
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.career-cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.career-cards .card{
+    width:260px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+
+    background:rgba(0,0,0,0.2);
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content h2{
+        font-size:1.5rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+
+    #result{
+        width:95%;
+    }
+}
+.why-us{
+    min-height:60vh;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+.features .card button{
+    margin-top:15px;
+}
+.careers .card{
+    max-width:700px;
+    margin:auto;
+}
+
+
+.roadmap-title{
+    font-size:3.5rem;
+    text-align:center;
+    margin-bottom:10px;
+
+    text-shadow:
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+
+.roadmap-subtitle{
+    text-align:center;
+    font-size:1.2rem;
+    margin-bottom:50px;
+    color:#ddd;
+}
+
+.roadmap-list{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.roadmap-list .card{
+    min-height:280px;
+    padding:30px;
+    text-align:center;
+}
+
+.roadmap-list .card h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.roadmap-list .card p{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+
+
+.arrow{
+    font-size:40px;
+    color:#c084fc;
+
+    text-shadow:
+    0 0 10px #c084fc,
+    0 0 20px #c084fc;
+}
+.roadmap-list .card{
+    transition:0.4s;
+}
+
+.roadmap-list .card:hover{
+    transform:translateY(-8px);
+}
+.roadmap-list{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.roadmap-list .card{
+    min-height:280px;
+    padding:30px;
+    text-align:center;
+
+    transition:0.4s;
+}
+
+.roadmap-list .card:hover{
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(168,85,247,0.5);
+}
+.roadmap-list{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.roadmap-list .card{
+    width:700px;
+    max-width:90%;
+    padding:25px;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.arrow{
+    font-size:40px;
+    color:#c084fc;
+    text-shadow:0 0 10px #c084fc;
+}
+.learning-roadmaps{
+    max-width:1000px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+}
+
+.learning-roadmaps .card{
+    width:auto;
+    min-height:auto;
+    padding:25px;
+    text-align:center;
+}
+
+.learning-roadmaps .card:hover{
+    transform:translateY(-10px);
+}
+/* Learning Roadmaps Page */
+
+.learning-roadmaps{
+    max-width:1000px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+}
+
+.learning-roadmaps .card{
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+
+    transition:0.4s;
+}
+
+.learning-roadmaps .card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(168,85,247,0.5);
+}
+
+.learning-roadmaps button{
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    .learning-roadmaps{
+        grid-template-columns:1fr;
+    }
+
+}
+.back-btn{
+    text-align:center;
+    margin-top:40px;
+}
+.insights-grid{
+    max-width:1100px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+}
+
+.insights-grid .card{
+    padding:30px;
+    text-align:center;
+}
+
+.back-btn{
+    text-align:center;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+    .insights-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+.insight-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.insight-content .card{
+    padding:40px;
+    text-align:left;
+    line-height:1.8;
+}
+
+.insight-content h2{
+    margin-top:20px;
+    color:#c084fc;
+}
+/* Insight Pages */
+
+.insight-page{
+    max-width:900px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.insight-page h1{
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:10px;
+
+    text-shadow:
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:40px;
+    color:#ddd;
+}
+
+.insight-page h2{
+    color:#c084fc;
+    margin-top:40px;
+    margin-bottom:15px;
+}
+
+.insight-page p,
+.insight-page li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.insight-page ul{
+    margin-left:25px;
+}
+
+.back-btn{
+    text-align:center;
+    margin-top:50px;
+}
+/* Resource Page Links */
+
+.card a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a:hover{
+    color: #c084fc;
+    text-decoration: underline;
+}
+.card a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card a:hover{
+    color: #c084fc;
+
+    text-shadow:
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+.card ul{
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li{
+    margin: 10px 0;
+}
+body{
+    background-image:url("../images/anime-career.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.65);
+
+    z-index:-1;
+}
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-left:8%;
+}
+
+.hero-content{
+    max-width:600px;
+    text-align:left;
+}
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(168,85,247,0.6);
+
+    transition:0.4s;
+}
+.why-us .card{
+    padding:25px;
+    text-align:center;
+}
+
+.why-us .card h3{
+    margin-bottom:12px;
+    color:white;
+}
+
+.why-us .card p{
+    font-size:15px;
+    line-height:1.6;
+    color:#ddd;
+}
